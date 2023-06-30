@@ -16,10 +16,14 @@ section{
 .gift-section{
     scroll-margin: 120px;
 }
-html, body{
+html{
+    font-size: 62.5%;
+}
+body{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: 1.4;
+    font-size: 1.6rem;
     scroll-behavior: smooth;
 }
 ul{
@@ -89,10 +93,10 @@ nav ul li:hover{
     flex-direction: column;
 }
 .hero-section h1{
-    font-size: 91px;
+    font-size: 9.1rem;
 }
 .hero-section h3{
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 .music-section{
     padding-top: 50px;
@@ -186,6 +190,7 @@ nav ul li:hover{
 .footer-links ul li:hover{
     cursor: pointer;
     letter-spacing:2px;
+    transition: 0.7s all;
 }
 .footer-links{
     width: 220px;
@@ -193,8 +198,54 @@ nav ul li:hover{
 .footer-lower p:hover{
     color: gold;
 }
-@media(max-width:768px){
+.menu-bar{
+    display: none;
+}
+@media (max-width:1024px){
+    .ipad-iphone-img{
+        margin-top: -200px;
+        top: 200px;
+    }
+    .gift-card img{
+        width: 40rem;
+    }
+    .ipad-iphone-img img, .mac-img img{
+        max-width: 100%;
+    }
+}
+@media (max-width:768px){
     nav ul{
         display: none;
+    }
+    .gift-section{
+        flex-direction: column;
+    }
+    .gift-section img{
+        max-width: 100%;
+    }
+    html{
+        font-size: 40%;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .menu-bar i{
+        font-size: 32px;
+    }
+    .footer-upper .container{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .footer-upper .footer-links{
+        min-width: 150px;
+    }
+}
+@media (max-width:425px){
+    .ipad-iphone-img{
+        margin-top: -100px;
+        top: 100px;
+    }
+    .about-music{
+        padding-top: 14rem;
     }
 }
