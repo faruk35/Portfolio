@@ -134,6 +134,7 @@ nav li:hover {
 /* Project Section */
 
 #project {
+  margin-bottom: 10px;
   background: var(--darker-color);
 }
 
